@@ -1,0 +1,139 @@
+==========================================================
+开始部署，时间：2019-12-12 18:00:35
+==========================================================
+yarn run v1.12.3
+$ vue-cli-service build
+
+ WARNING  Compiled with 2 warnings6:00:57 PM
+
+ warning  
+
+asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+This can impact web performance.
+Assets: 
+  css/chunk-vendors.e8eb0695.css (379 KiB)
+  js/chunk-vendors.4d96db54.js (547 KiB)
+
+ warning  
+
+entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+Entrypoints:
+  app (1000 KiB)
+      css/chunk-vendors.e8eb0695.css
+      js/chunk-vendors.4d96db54.js
+      css/app.aaf8f74f.css
+      js/app.e8cd6096.js
+
+
+  File                                    Size              Gzipped
+
+  dist/js/chunk-vendors.4d96db54.js       547.47 KiB        161.77 KiB
+  dist/js/app.e8cd6096.js                 71.33 KiB         19.06 KiB
+  dist/js/chunk-f4d4ef34.e559242d.js      66.63 KiB         11.19 KiB
+  dist/js/chunk-7fc51c9e.0192e251.js      49.27 KiB         8.38 KiB
+  dist/js/chunk-9f3ecb3e.3fe9ee42.js      27.44 KiB         6.44 KiB
+  dist/js/chunk-4e4c6a94.7b8a0642.js      26.63 KiB         5.71 KiB
+  dist/js/chunk-4e4ebf34.9c5c199e.js      24.71 KiB         5.44 KiB
+  dist/js/chunk-397df527.4339a421.js      22.47 KiB         4.39 KiB
+  dist/js/chunk-87a097f2.f224c95c.js      21.96 KiB         5.23 KiB
+  dist/js/chunk-358de028.e3842e13.js      21.57 KiB         3.90 KiB
+  dist/js/chunk-2fe0b212.dce1f511.js      21.07 KiB         4.08 KiB
+  dist/js/chunk-bb714b8e.18492d11.js      20.90 KiB         4.01 KiB
+  dist/js/chunk-87764d98.72d400f9.js      20.05 KiB         4.88 KiB
+  dist/js/chunk-19ffec8b.fe484f93.js      19.80 KiB         5.21 KiB
+  dist/js/chunk-81ab0cd6.5e318b9d.js      19.54 KiB         4.74 KiB
+  dist/js/chunk-4e7bc932.a7e23db0.js      19.41 KiB         4.94 KiB
+  dist/js/chunk-4e7d128e.e2b713ab.js      18.92 KiB         4.88 KiB
+  dist/js/chunk-743faf7b.a3f889e7.js      18.86 KiB         4.69 KiB
+  dist/js/chunk-ce857a04.2ac3d2d4.js      18.22 KiB         4.26 KiB
+  dist/js/chunk-4e76c5c6.c854cb96.js      18.07 KiB         4.68 KiB
+  dist/js/chunk-4e79765a.33c3476c.js      17.77 KiB         4.72 KiB
+  dist/js/chunk-1290df53.8e5226ad.js      17.65 KiB         4.44 KiB
+  dist/js/chunk-4e500246.6f637e8a.js      17.58 KiB         4.63 KiB
+  dist/js/chunk-7606e392.99d7d3e1.js      17.42 KiB         4.82 KiB
+  dist/js/chunk-a5749afc.5100d574.js      16.84 KiB         3.94 KiB
+  dist/js/chunk-64a2031e.97046149.js      16.72 KiB         4.48 KiB
+  dist/js/chunk-145aa900.3f98ab9d.js      16.54 KiB         4.38 KiB
+  dist/js/chunk-4e5023bc.6e3ee077.js      16.54 KiB         4.52 KiB
+  dist/js/chunk-128ffa9a.c2e77e7d.js      16.53 KiB         4.27 KiB
+  dist/js/chunk-2ee12928.96cf9056.js      16.40 KiB         4.41 KiB
+  dist/js/chunk-4258b34d.47bb031c.js      16.18 KiB         4.30 KiB
+  dist/js/chunk-6ac85a3f.6a1c3037.js      15.95 KiB         4.48 KiB
+  dist/js/chunk-1290d519.e7406097.js      15.92 KiB         4.52 KiB
+  dist/js/chunk-2d0be2fe.611d266e.js      15.69 KiB         3.51 KiB
+  dist/js/chunk-61e98861.2efeabf3.js      15.57 KiB         4.33 KiB
+  dist/js/chunk-129154ba.72db1f14.js      15.09 KiB         4.38 KiB
+  dist/js/chunk-2a2bafca.6611a531.js      14.55 KiB         4.45 KiB
+  dist/js/chunk-2bcc2699.dcb8f7b8.js      13.87 KiB         3.77 KiB
+  dist/js/chunk-1ff5c766.555f60c4.js      13.30 KiB         3.72 KiB
+  dist/js/chunk-a2d77326.a98a3fee.js      11.97 KiB         3.68 KiB
+  dist/js/chunk-f7bf6ad4.3e6daa9c.js      10.98 KiB         3.37 KiB
+  dist/js/chunk-2d0ddb50.6e4eb38c.js      10.78 KiB         2.54 KiB
+  dist/js/chunk-73f834f4.5ab00a51.js      10.03 KiB         3.43 KiB
+  dist/js/chunk-2d0ac96d.36756c4d.js      8.45 KiB          2.35 KiB
+  dist/js/chunk-2f280197.e5e531d8.js      8.13 KiB          2.17 KiB
+  dist/js/chunk-4b65be47.a0abeafa.js      8.01 KiB          2.14 KiB
+  dist/js/chunk-2d0e6c0b.55683073.js      7.85 KiB          2.30 KiB
+  dist/js/chunk-847ffe54.6d32c323.js      7.77 KiB          3.04 KiB
+  dist/js/chunk-607b7c18.f4545694.js      7.71 KiB          2.68 KiB
+  dist/js/chunk-321746be.74d74c78.js      7.68 KiB          2.17 KiB
+  dist/js/chunk-ba7e1822.ce410c8a.js      7.59 KiB          2.12 KiB
+  dist/js/chunk-8cc6fdc2.4795f513.js      7.36 KiB          2.09 KiB
+  dist/js/chunk-2d0c73c0.bd7a0260.js      7.30 KiB          2.49 KiB
+  dist/js/chunk-608e1b54.d42bbbca.js      7.18 KiB          2.45 KiB
+  dist/js/chunk-60797a1c.f310d224.js      7.06 KiB          2.58 KiB
+  dist/js/chunk-60906e7f.36e15d4e.js      7.05 KiB          2.45 KiB
+  dist/js/chunk-2d217c6d.fa48a7f7.js      7.01 KiB          2.45 KiB
+  dist/js/chunk-60789a76.c50a557d.js      6.87 KiB          2.31 KiB
+  dist/js/chunk-608f1122.28e7d9cc.js      6.63 KiB          2.48 KiB
+  dist/js/chunk-b993272a.0b139d47.js      3.57 KiB          1.61 KiB
+  dist/js/chunk-44e23872.84473631.js      3.06 KiB          1.40 KiB
+  dist/js/chunk-36b1c0e2.b5ca85c6.js      2.15 KiB          1.03 KiB
+  dist/js/chunk-57a0059b.20718170.js      2.07 KiB          1.12 KiB
+  dist/js/chunk-a86cf9c4.70915243.js      1.26 KiB          0.73 KiB
+  dist/js/chunk-2d0ae51b.514f4177.js      0.81 KiB          0.47 KiB
+  dist/js/chunk-2d0d6e97.3da905f2.js      0.36 KiB          0.28 KiB
+  dist/css/chunk-vendors.e8eb0695.css     378.97 KiB        43.49 KiB
+  dist/css/chunk-19ffec8b.1b129f27.css    10.66 KiB         1.78 KiB
+  dist/css/chunk-2a2bafca.3344f93e.css    7.66 KiB          1.44 KiB
+  dist/css/chunk-9f3ecb3e.a37bdc86.css    7.24 KiB          1.15 KiB
+  dist/css/chunk-73f834f4.8d00ff66.css    5.25 KiB          1.05 KiB
+  dist/css/chunk-36b1c0e2.f45f300c.css    2.80 KiB          0.81 KiB
+  dist/css/app.aaf8f74f.css               1.90 KiB          0.60 KiB
+  dist/css/chunk-f4d4ef34.abd80f1d.css    1.64 KiB          0.30 KiB
+  dist/css/chunk-64a2031e.71ecc896.css    1.34 KiB          0.46 KiB
+  dist/css/chunk-2ee12928.f0a1ff18.css    1.34 KiB          0.46 KiB
+  dist/css/chunk-7fc51c9e.aee180b4.css    1.24 KiB          0.27 KiB
+  dist/css/chunk-44e23872.b4938a6d.css    0.93 KiB          0.37 KiB
+  dist/css/chunk-1ff5c766.98480f48.css    0.71 KiB          0.26 KiB
+  dist/css/chunk-2bcc2699.2cd4467d.css    0.71 KiB          0.26 KiB
+  dist/css/chunk-6ac85a3f.8b8f4869.css    0.66 KiB          0.31 KiB
+  dist/css/chunk-743faf7b.d9458cac.css    0.62 KiB          0.23 KiB
+  dist/css/chunk-81ab0cd6.4827e39e.css    0.62 KiB          0.23 KiB
+  dist/css/chunk-a2d77326.99f39b44.css    0.61 KiB          0.23 KiB
+  dist/css/chunk-f7bf6ad4.ebeb756e.css    0.61 KiB          0.22 KiB
+  dist/css/chunk-a86cf9c4.0374eea0.css    0.50 KiB          0.26 KiB
+  dist/css/chunk-57a0059b.a7a8b031.css    0.41 KiB          0.22 KiB
+  dist/css/chunk-397df527.fa97be9c.css    0.40 KiB          0.20 KiB
+  dist/css/chunk-2fe0b212.a8d7271d.css    0.40 KiB          0.20 KiB
+  dist/css/chunk-145aa900.fa37c17c.css    0.23 KiB          0.14 KiB
+  dist/css/chunk-4258b34d.f2c91547.css    0.23 KiB          0.14 KiB
+  dist/css/chunk-7606e392.581a4a2c.css    0.17 KiB          0.13 KiB
+  dist/css/chunk-61e98861.3fd82caf.css    0.17 KiB          0.13 KiB
+  dist/css/chunk-bb714b8e.5d1d589b.css    0.09 KiB          0.09 KiB
+  dist/css/chunk-358de028.83dec9c7.css    0.09 KiB          0.10 KiB
+  dist/css/chunk-4b65be47.0733209e.css    0.05 KiB          0.06 KiB
+  dist/css/chunk-ba7e1822.17584cae.css    0.05 KiB          0.06 KiB
+  dist/css/chunk-2f280197.706102ce.css    0.05 KiB          0.06 KiB
+  dist/css/chunk-321746be.eaa3fbcc.css    0.05 KiB          0.06 KiB
+  dist/css/chunk-8cc6fdc2.5bc0f41a.css    0.05 KiB          0.06 KiB
+
+  Images and other types of assets omitted.
+
+ DONE  Build complete. The dist directory is ready to be deployed.
+ INFO  Check out deployment instructions at https://cli.vuejs.org/guide/deployment.html
+      
+Done in 23.10s.
+==========================================================
+部署成功，时间：2019-12-12 18:00:58
+==========================================================

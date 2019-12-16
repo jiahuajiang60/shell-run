@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>️公卫测试发包</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"
+            integrity="sha384-L2pyEeut/H3mtgCBaUNw7KWzp5n9+4pDQiExs933/5QfaTh8YStYFFkOzSoXjlTb"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+            integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <style type="text/css">
+        #waifu-tool {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row mt-5">
+        <div class="col-md-2"></div>
+        <div class="col-md-4 d-flex justify-content-center">
+            <button type="button" class="btn btn-primary" onclick="deploy()">部署公卫后端服务</button>
+        </div>
+        <div class="col-md-4 d-flex justify-content-center">
+            <button type="button" class="btn btn-primary" onclick="deployWeb()">部署公卫前端页面</button>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row mt-5 d-flex justify-content-center">
+        <div class="bg-dark w-75 h-auto rounded pl-3 pt-3">
+            <button type="button" class="btn btn-info mt-3 mr-3 mb-3 float-right" onclick="log()">刷新日志</button>
+            <pre class="text-light"><code id="codes"></code></pre>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    let codes = $("#codes")
+    let deploy = () => {
+        alert("无用，还没弄！")
+        // $.get("/deploy/java", (result) => {
+        //
+        // });
+    }
+    let log = () => {
+        $.get("/deploy/log", (result) => {
+            if (result && result.code && result.code === "200") {
+                codes.html(result.msg)
+            }
+        })
+    }
+    let deployWeb = () => {
+        alert("正在开始部署项目...")
+        $.get("/deploy/web", (result) => {
+            if (result && result.code && result.code === "200") {
+                log()
+                alert("部署成功")
+            }
+        });
+    }
+
+    window.onload=()=>{
+        log()
+    }
+</script>
+</html>
